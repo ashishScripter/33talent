@@ -2,5 +2,5 @@
 
 
 
-echo "version 1.1" ;
+echo "version 1.2" ;
 ?>
