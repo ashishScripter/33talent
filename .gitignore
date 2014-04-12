@@ -1,2 +1,4 @@
 assets
 admin/assets
+protected/runtime
+admin/protected/runtime
