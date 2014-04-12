@@ -71,7 +71,7 @@
 	<?php echo $content; ?>
 
 	<div id="footer">
-For any support, please contact <a href="mailto:prerna.pant@ogilvy.com" >prerna.pant@ogilvy.com</a>
+For any support, please contact <a href="mailto:amol.chawathe@fountaintechies.com" >amol.chawathe@fountaintechies.com</a>
 		
 	</div><!-- footer -->
 

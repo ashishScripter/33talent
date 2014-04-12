@@ -3,14 +3,14 @@
 
 if(IS_LOCAL)
 {
-    $db = "do_debate";
-    $user = "root";
-    $pass = "root";
+   $db = "33talent";
+   $user = "33talent";
+   $pass = "10gXWOqeaf";
 }
 else
 {
-    $db = "do_debate";
-    $user = "root";
+    $db = "33talent";
+    $user = "33talent";
     $pass = "10gXWOqeaf";
 }
 
