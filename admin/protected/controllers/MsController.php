@@ -84,7 +84,7 @@ class MsController extends Controller
 		
 		'PRELIKE_PAGE' => array('value4_text'=>'You must click on like button to see this page.', 'value1'=>'Custom HTML'),
 		
-		'ADMIN_PANEL_BRANDING' => array('value4_text'=>'<p><img src="themes/shadow_dancer/images/logo.png" alt="" /></p>', 'value5_text'=>'<p style="text-align: center;"><span>Copyright &copy; 2012 by rocketunder.com. All Rights Reserved.</span><br /><span>For any support, please contact support@rocketunder.com.</span></p>'),
+		'ADMIN_PANEL_BRANDING' => array('value4_text'=>'<p><img src="themes/shadow_dancer/images/logo.png" alt="" /></p>', 'value5_text'=>'<p style="text-align: center;"><span>Copyright &copy; 2014 Fountaintechies.com. All Rights Reserved.</span><br /><span></span></p>'),
 		
 		
 		//ENTRIES Settings

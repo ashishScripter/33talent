@@ -117,9 +117,9 @@ class SiteController extends Controller
 	 public function actionIndex($id='')
 		{
 				
-			echo "Amol" ;	
+			
 		    
-			//$this->facebookAuthenticate();
+			$this->facebookAuthenticate();
 			
 			if($id == '')
 				{
