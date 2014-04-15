@@ -13,7 +13,8 @@ include("./protected/config/common.php");
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>$appTitle,
-
+	'defaultController' => 'page',
+	
 	// preloading 'log' component
 	'preload'=>array('log'),
 
@@ -30,9 +31,13 @@ return array(
 		
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'pakistan555',
+			'password'=>'admin',
 		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters' => array('127.0.0.1','192.168.1.6'),
+		//	'ipFilters'=>array('127.0.0.1'),
+                         'ipFilters'=> false,
+        			'generatorPaths' => array(
+            		'bootstrap.gii'
+       		 ),  
 		),
 		'Facebookphotos',
 	),
@@ -83,11 +88,11 @@ return array(
 					'levels'=>'error, warning',
 				),
 				// uncomment the following to show log messages on web pages
-				/*
+				
 				array(
 					'class'=>'CWebLogRoute',
 				),
-				*/
+				
 			),
 		),
 	),

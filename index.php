@@ -3,16 +3,16 @@
 
 ini_set('display_errors', true);
 
-if($_SERVER['HTTP_HOST']=="192.168.1.189" or $_SERVER['HTTP_HOST']=="localhost:8888")
-{
-	define("IS_LOCAL",true);
-}
-else
-{
-    define("IS_LOCAL",false);
-}
+// if($_SERVER['HTTP_HOST']=="192.168.1.189" or $_SERVER['HTTP_HOST']=="localhost:8888" or $_SERVER['HTTP_HOST']=="118.70.177.23")
+// {
+// 	define("IS_LOCAL",true);
+// }
+// else
+// {
+//     define("IS_LOCAL",false);
+// }
 
-
+    define("IS_LOCAL",true);
 
 if(IS_LOCAL)
 {

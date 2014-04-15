@@ -13,14 +13,9 @@ include("../protected/config/common.php");
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Facebook Application - Admin Panel',
-    
 	'theme'=>'shadow_dancer',
-    
-    
-
 	// preloading 'log' component
 	'preload'=>array('log'),
-
 	// autoloading model and component classes
 	'import'=>array(
 		'application.models.*',
@@ -29,11 +24,6 @@ return array(
 		//'ext.giix-components.*', // giix components
 		'application.extensions.awegen.components.*',
 	),
-	
- 
-    
-	
-    
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
 		
@@ -59,9 +49,10 @@ return array(
 	    
 		    'gii' => array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'pakistan555',
+			'password'=>'10gXWOqeaf',
 		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters' => array('127.0.0.1','182.177.194.38'),
+			//'ipFilters'=>array('127.0.0.1','::1'),
+			'ipFilters'=>array($_SERVER['REMOTE_ADDR'])
 		),
 	    
 	    
@@ -73,8 +64,6 @@ return array(
     
 	// application components
 	'components'=>array(
-	    
-	    
 	    
 	    'authManager'=>array(
 		'class'=>'CPhpAuthManager',	
