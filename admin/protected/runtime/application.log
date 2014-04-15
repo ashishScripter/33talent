@@ -3740,3 +3740,21 @@ Stack trace:
 REQUEST_URI=/trunk/admin/index.php?r=site/login
 ---
 2014/04/15 17:57:53 [error] [exception.CDbException] SQLSTATE[28000] [1045] Access denied for user '33talent'@'localhost' (using password: YES)
+2014/04/15 18:14:09 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table '33talent.tbl_jobs' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_jobs`.
+2014/04/15 18:14:18 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table '33talent.jobs' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `jobs`.
+2014/04/15 18:14:37 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table '33talent.tbl_jobs' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_jobs`.
+2014/04/15 18:14:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table '33talent.tbl_jobs' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_jobs`.
+2014/04/15 18:14:55 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table '33talent.tbl_jobs' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_jobs`.
+2014/04/15 18:15:19 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table '33talent.tbl_jobs' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_jobs`.
+2014/04/15 18:15:40 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table '33talent.jobs' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `jobs`.
+2014/04/15 18:16:32 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table '33talent.tbl_jobs' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_jobs`.
+2014/04/15 18:16:49 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table '33talent.tbl_jobs' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_jobs`.
+2014/04/15 18:17:02 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table '33talent.tbl_jobs' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_jobs`.
+2014/04/15 19:24:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Job/create".' in D:\xampp\htdocs\33talent\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\33talent\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Job/create')
+#1 D:\xampp\htdocs\33talent\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\33talent\trunk\admin\index.php(43): CApplication->run()
+#3 {main}
+REQUEST_URI=/trunk/admin/index.php?r=Job/create
+---
