@@ -2,3 +2,5 @@ assets
 admin/assets
 protected/runtime
 admin/protected/runtime
+/nbproject/private/
+/33talent/nbproject/private/

@@ -1,0 +1,202 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is behind 'origin/master' by 23 commits, and can be fast-forwarded.
+#   (use "git pull" to update your local branch)
+#
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   .gitignore
+#	modified:   admin/protected/config/main.php
+#	modified:   admin/protected/controllers/MsController.php
+#	modified:   admin/protected/controllers/SiteController.php
+#	modified:   admin/protected/runtime/application.log
+#	modified:   admin/protected/views/layouts/main.php
+#	modified:   admin/protected/views/ms/_form_application_settings.php
+#	modified:   admin/themes/shadow_dancer/views/layouts/main.php
+#	modified:   admin/themes/shadow_dancer/views/site/index.php
+#	deleted:    css/bg.gif
+#	deleted:    css/customPager.css
+#	deleted:    css/facebook.css
+#	deleted:    css/fb_comments.css
+#	deleted:    css/form.css
+#	deleted:    css/ie.css
+#	deleted:    css/main.css
+#	deleted:    css/print.css
+#	modified:   css/reset.css
+#	deleted:    css/screen.css
+#	deleted:    images/against.png
+#	deleted:    images/balance_foot.jpg
+#	deleted:    images/balance_foot_1.jpg
+#	deleted:    images/before_balance_foot.jpg
+#	deleted:    images/favour_comment.jpg
+#	deleted:    images/first_image.jpg
+#	deleted:    images/friend_list.png
+#	deleted:    images/heading.jpg
+#	deleted:    images/image_2.jpg
+#	deleted:    images/image_3.jpg
+#	deleted:    images/left.jpg
+#	deleted:    images/left_makeup.png
+#	deleted:    images/left_success.png
+#	deleted:    images/left_voteonce.png
+#	deleted:    images/line.png
+#	deleted:    images/open_brain.jpg
+#	deleted:    images/owl.png
+#	deleted:    images/percentage.jpg
+#	deleted:    images/progress.gif
+#	deleted:    images/right.jpg
+#	deleted:    images/right_makeup.png
+#	deleted:    images/right_success.png
+#	deleted:    images/right_voteonce.png
+#	deleted:    images/share.jpg
+#	deleted:    images/takeabreak.jpg
+#	deleted:    images/timer.jpg
+#	deleted:    images/video_image.jpg
+#	deleted:    images/video_image_2.jpg
+#	deleted:    images/vote_against.jpg
+#	deleted:    images/vote_for.jpg
+#	deleted:    images/you_voted_for.png
+#	modified:   index.php
+#	deleted:    js/all.js
+#	deleted:    js/art.html
+#	deleted:    js/blank.gif
+#	deleted:    js/blend_script.js
+#	deleted:    js/block.js
+#	deleted:    js/color.js
+#	deleted:    js/countdown.js
+#	deleted:    js/facebook.js
+#	deleted:    js/fancyDropDown.js
+#	deleted:    js/fancybox_loading.gif
+#	deleted:    js/fancybox_overlay.png
+#	deleted:    js/fancybox_sprite.png
+#	deleted:    js/html.php
+#	deleted:    js/jquery-1.5.1.min
+#	deleted:    js/jquery-1.5.1.min.js
+#	deleted:    js/jquery-1.8.2.js
+#	deleted:    js/jquery-ui-1.8.11.custom.min
+#	deleted:    js/jquery-ui-1.8.11.custom.min.js
+#	deleted:    js/jquery-ui.min.js
+#	deleted:    js/jquery.cycle.all.latest.js
+#	deleted:    js/jquery.fancybox.css
+#	deleted:    js/jquery.fancybox.js
+#	deleted:    js/jquery.form.js
+#	deleted:    js/jquery.mCustomScrollbar.css
+#	deleted:    js/jquery.mCustomScrollbar.js
+#	deleted:    js/jquery.mCustomScrollbarOLD.css
+#	deleted:    js/jquery.min.js
+#	deleted:    js/jquery.mousewheel.min.js
+#	deleted:    js/main.js
+#	deleted:    js/pixastic.core.js
+#	deleted:    js/pixastic.jquery.js
+#	deleted:    js/radio-style.js
+#	deleted:    js/script.js
+#	deleted:    js/script_new.js
+#	deleted:    js/ui.js
+#	deleted:    js/upclick-min.js
+#	modified:   protected/config/common.php
+#	modified:   protected/config/main.php
+#	modified:   protected/controllers/SiteController.php
+#	modified:   protected/runtime/application.log
+#	modified:   protected/views/layouts/main.php
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	33talent/
+#	_bk/
+#	admin/css/images/
+#	admin/css/jquery-ui.css
+#	admin/js/jobs.js
+#	admin/js/jquery-ui.min.js
+#	admin/js/jquery.min.js
+#	admin/protected/config/mail.php
+#	admin/protected/controllers/JobAboutController.php
+#	admin/protected/controllers/JobAlertsController.php
+#	admin/protected/controllers/JobCategoriesController.php
+#	admin/protected/controllers/JobContactusController.php
+#	admin/protected/controllers/JobEmployeesController.php
+#	admin/protected/controllers/JobLocationController.php
+#	admin/protected/controllers/JobResumesController.php
+#	admin/protected/controllers/JobSubcategoriesController.php
+#	admin/protected/controllers/JobTeamsController.php
+#	admin/protected/controllers/JobTestimonialUserController.php
+#	admin/protected/controllers/JobTestimonialsController.php
+#	admin/protected/controllers/JobWorktypeController.php
+#	admin/protected/controllers/JobsController.php
+#	admin/protected/controllers/README.md
+#	admin/protected/extensions/YiiMailer/
+#	admin/protected/extensions/timepicker/
+#	admin/protected/models/Files.php
+#	admin/protected/models/JobAbout.php
+#	admin/protected/models/JobAlerts.php
+#	admin/protected/models/JobCategories.php
+#	admin/protected/models/JobContactus.php
+#	admin/protected/models/JobCovers.php
+#	admin/protected/models/JobEmployees.php
+#	admin/protected/models/JobLocation.php
+#	admin/protected/models/JobResumes.php
+#	admin/protected/models/JobSubCategories.php
+#	admin/protected/models/JobTeams.php
+#	admin/protected/models/JobTestimonialUser.php
+#	admin/protected/models/JobTestimonials.php
+#	admin/protected/models/JobWorktype.php
+#	admin/protected/models/Jobs.php
+#	admin/protected/tests/index-test.php
+#	admin/protected/uploads/
+#	admin/protected/vendors/
+#	admin/protected/views/contact.php
+#	admin/protected/views/create.php
+#	admin/protected/views/jobAbout/
+#	admin/protected/views/jobCategories/
+#	admin/protected/views/jobContactus/
+#	admin/protected/views/jobEmployees/
+#	admin/protected/views/jobLocation/
+#	admin/protected/views/jobResumes/
+#	admin/protected/views/jobSubcategories/
+#	admin/protected/views/jobTeams/
+#	admin/protected/views/jobTestimonialUser/
+#	admin/protected/views/jobTestimonials/
+#	admin/protected/views/jobWorktype/
+#	admin/protected/views/jobs/
+#	admin/protected/views/layouts/mail.php
+#	admin/protected/views/mail/
+#	admin/uploads/files/
+#	css/demo.css
+#	css/responsiveslides.css
+#	css/style-resp.css
+#	css/style.css
+#	css/style1.css
+#	db/
+#	docs/
+#	images/
+#	js/
+#	protected/config/.main.php.swp
+#	protected/config/mail.php
+#	protected/controllers/PageController.php
+#	protected/controllers/PageController1605.php
+#	protected/controllers/PageController1905.php
+#	protected/extensions/YiiMailer/
+#	protected/extensions/yii-mail/
+#	protected/models/Files.php
+#	protected/models/JobAbout.php
+#	protected/models/JobAlerts.php
+#	protected/models/JobCategories.php
+#	protected/models/JobContactus.php
+#	protected/models/JobEmployees.php
+#	protected/models/JobLocation.php
+#	protected/models/JobResumes.php
+#	protected/models/JobSubcategories.php
+#	protected/models/JobTeams.php
+#	protected/models/JobTestimonialUser.php
+#	protected/models/JobTestimonials.php
+#	protected/models/JobWorktype.php
+#	protected/vendors/PHPMailer/
+#	protected/views/layouts/_main.php
+#	protected/views/layouts/mail.php
+#	protected/views/layouts/main.bk.php
+#	protected/views/mail/
+#	protected/views/page/
+#	uploads/files/
+

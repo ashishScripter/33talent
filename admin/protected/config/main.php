@@ -24,6 +24,8 @@ return array(
 	// autoloading model and component classes
 	'import'=>array(
 		'application.models.*',
+          'ext.yii-mail.YiiMailMessage',
+		
 		'application.components.*',
                 'application.extensions/phpthumb.*',  // <--- here!
 		//'ext.giix-components.*', // giix components
@@ -59,9 +61,10 @@ return array(
 	    
 		    'gii' => array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'pakistan555',
+			'password'=>'10gXWOqeaf',
 		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters' => array('127.0.0.1','182.177.194.38'),
+			//'ipFilters'=>array('127.0.0.1','::1'),
+			'ipFilters'=>array($_SERVER['REMOTE_ADDR'])
 		),
 	    
 	    
@@ -86,6 +89,17 @@ return array(
 			'allowAutoLogin'=>true,
 			'class' => 'WebUser',
 		),
+		'mail' => array(
+            'class' => 'ext.yii-mail.YiiMail',
+            'transportType' => 'smtp',
+            'transportOptions' => array(
+                'host' => 'smtp.sendgrid.net',
+                'username' => 'dayseven',
+                'password' => '123sendgrid',
+                'port' => '25',
+            ),
+            'viewPath' => 'application.views.mail',
+        ),
 		// uncomment the following to enable URLs in path-format
 		/*
 		'urlManager'=>array(

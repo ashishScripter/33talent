@@ -13,14 +13,16 @@ include("./protected/config/common.php");
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>$appTitle,
+	'defaultController' => 'page',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
 
 	// autoloading model and component classes
 	'import'=>array(
-		'application.models.*',
+		'application.models.*',                
 		'application.components.*',
+                'ext.yii-mail.YiiMailMessage',
 		'application.extensions/phpthumb.*',  // <--- here!
 	    'application.extensions.jformvalidate.EHtml',
 	),
@@ -30,9 +32,13 @@ return array(
 		
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'pakistan555',
+			'password'=>'admin',
 		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters' => array('127.0.0.1','192.168.1.6'),
+		//	'ipFilters'=>array('127.0.0.1'),
+                         'ipFilters'=> false,
+        			'generatorPaths' => array(
+            		'bootstrap.gii'
+       		 ),  
 		),
 		'Facebookphotos',
 	),
@@ -46,6 +52,17 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
+            	'mail' => array(
+                'class' => 'ext.yii-mail.YiiMail',
+                'transportType'=>'smtp',
+                'transportOptions'=>array(
+                        'host'=>'smtp.sendgrid.net',
+                        'username'=>'dayseven',
+                        'password'=>'123sendgrid',
+                        'port'=>'25',                       
+                ),
+                'viewPath' => 'application.views.mail',             
+                ),
 		// uncomment the following to enable URLs in path-format
 		/*
 		'urlManager'=>array(
@@ -56,10 +73,10 @@ return array(
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
-		*/
+		
 		'db'=>array(
 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
-		),
+		),*/
 		// uncomment the following to use a MySQL database
 		
 		
@@ -70,7 +87,18 @@ return array(
 			'password' => $pass,
 			'charset' => 'utf8',
 		),
-		
+		'urlManager' => array(
+                    'urlFormat' => 'path',
+//                    'showScriptName' => false,
+//                    'caseSensitive'=>false,  
+                    'rules' => array(
+//                        '<controller:\w+>/<id:\d+>' => '<controller>/view',
+//                        '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
+                         'page/<view>-<id:\d+>'=>'page/view',
+                        
+                         '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
+                    ),
+                ),
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
             'errorAction'=>'site/error',
@@ -83,11 +111,11 @@ return array(
 					'levels'=>'error, warning',
 				),
 				// uncomment the following to show log messages on web pages
-				/*
+				
 				array(
 					'class'=>'CWebLogRoute',
 				),
-				*/
+				
 			),
 		),
 	),
@@ -97,7 +125,7 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'wasim@fortsolution.com',
-		
+                'listPerPage'=> 3,
 		//facebook settings are managed through admin panel..
 	    
 	),

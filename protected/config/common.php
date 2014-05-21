@@ -3,9 +3,9 @@
 
 if(IS_LOCAL)
 {
-   $db = "33talent";
-   $user = "33talent";
-   $pass = "10gXWOqeaf";
+   $db = "fbapp_33talent";
+   $user = "root";
+   $pass = "";
 }
 else
 {
@@ -15,7 +15,7 @@ else
 }
 
 
-$appTitle = "Do debate";
+$appTitle = "33talent";
 
 
 
